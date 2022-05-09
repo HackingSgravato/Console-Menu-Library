@@ -1,0 +1,52 @@
+// example:
+// in main function I wrote:
+// Menu.Write(35, 25, logo, Color.Red, 4, voices_names, Color.DarkBlue);   
+// Menu.Choosevoices(Color.Cyan, Color.DarkCyan, String.Empty);
+
+// get ascii art here:
+// https://onlineasciitools.com/convert-text-to-ascii-art
+
+// example custom_choosePhrase
+// string custom_choosePhrase = "\n<< choose a voice <<\n>> ";
+
+// get the choosen voice example:
+// uint u = Menu.Choosevoices(Color.Cyan, Color.DarkCyan, String.Empty);
+// Console.WriteLine("choosen voice: " + u);
+
+// method you can use:
+// Menu.Write()
+// Menu.Choosevoice()
+// Menu.Clear()
+
+// list template:
+// example. [1] first voice
+// string list_template = "brackets"
+//
+// example. 1. first voice 
+// string list_template = "numberswithdot"
+//
+// example. 1) first voice
+// string list_template = "numberswithroundbracket"
+//
+// example. [+] voice sum
+// string list_template = "symbolwithname"
+
+// attention:
+// if you use symbolwithname
+// to get the choosen symbol you must do this:
+// Convert.ToChar(Choosevoice(bla, bla));
+
+// example multi char:
+// string[] voices_names = {"prima voce", "seconda voce", "terza voce", "quarta voce"};
+// string[] symbols = { "+", "-", "*", "/" };
+// Menu.Write(35, 25, logo, Color.Red, 4, voices_names, Color.DarkBlue, "symbolwithname", symbols, Color.GreenYellow, true);
+// if (Convert.ToChar(Menu.Choosevoice(Color.Cyan, Color.DarkCyan, String.Empty, true)) == '+')
+//    Console.Write("bella pe te");
+//
+// another example:
+// Menu.Write(35, 25, logo, Color.Red, 5, voices_names, Color.DarkBlue, "numberswithroundbracket", Array.Empty<string>(), Color.GreenYellow, false);
+//
+// another example:
+// string[] voices_names = {"prima voce", "seconda voce", "terza voce", "quarta voce", "quinta voce"};
+// string[] symbols = { "+" };
+// Menu.Write(35, 25, logo, Color.Red, 5, voices_names, Color.DarkBlue, "symbolwithname", symbols, Color.GreenYellow, false);
