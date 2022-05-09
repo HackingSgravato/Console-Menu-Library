@@ -1,3 +1,8 @@
+// attention use these:
+// using Console_Menu;
+// using Console = Colorful.Console;
+// using System.Drawing;
+
 // example:
 // in main function I wrote:
 // Menu.Write(35, 25, logo, Color.Red, 4, voices_names, Color.DarkBlue);   
